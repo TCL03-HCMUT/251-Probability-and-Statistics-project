@@ -17,7 +17,6 @@ summary_stats <- function(a) {
 }
 
 #Table 4.1:
-
 print(table(data2$is_Ad))
 adprob <- prop.table(table(data2$is_Ad))
 print(adprob)
@@ -103,5 +102,6 @@ summary_stats(data2$Aspect_ratio[data2$is_Ad == 1])
 X11()
 par(mfcol = c(1, 1)) # Put graphs in 3 columns and 1 row
 boxplot(data2$Aspect_ratio ~ data2$is_Ad, main = "Boxplot of Aspect Ratio by Ad Type", xlab = "Ad Type", ylab = "Aspect Ratio", names = c("Non-Ad", "Ad"), col = c("#0066CC", "#FF3700"))
+
 
 
