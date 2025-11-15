@@ -3,7 +3,7 @@ library(pscl)
 library(caret)
 library(PRROC)
 library(pROC)
-libracy(ggplot2)
+library(ggplot2)
 
 
 # Make this reproducible
