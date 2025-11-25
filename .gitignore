@@ -49,3 +49,8 @@ po/*~
 rsconnect/
 
 test.r
+AD_CODE.r
+model_prediciton.r
+randomforest.r
+rf_improved.R
+xgboost.r 

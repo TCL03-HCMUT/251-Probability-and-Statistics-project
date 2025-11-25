@@ -7,11 +7,6 @@ data <- data[, -c(1, 6:1559)]
 # Rename columns
 colnames(data) <- c("Height", "Width", "Aspect_ratio", "Local", "Is_Ad")
 
-summary(data)
-
-head(data)
-
-
 # Replace ? with NA
 data <- as.data.frame(lapply(data, function(x) ifelse(grepl("\\?", x), NA, x)))
 
@@ -23,6 +18,10 @@ table(data$Is_Ad)
 
 # Convert all values to numeric
 data <- as.data.frame(sapply(data, as.numeric))
+
+summary(data)
+
+head(data)
 
 # Count number of NA
 na_count <- sapply(data, function(x) sum(is.na(x)))
